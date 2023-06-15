@@ -1,26 +1,21 @@
-const allH1 = document.getElementsByTagName("h1");
-const sections = document.getElementsByClassName("my-section");
+// append a child
 
-for (const h1 of allH1) {
-  h1.style.color = "yellow";
-  h1.style.backgroundColor = "violet";
-  h1.style.border = "2px solid blue";
-  h1.innerHTML = "My name is Rayhan";
-  h1.style.padding = "15px";
-  h1.style.borderRadius = "10px";
-}
+const section2 = document.createElement("section");
+section2.classList.add("my-section");
+const h12 = document.createElement("h1");
+h12.innerHTML = "I am DOM created H1";
+const ul = document.createElement("ul");
+const li2 = document.createElement("li");
+li2.innerHTML = "I am DOM created li1";
+const li3 = document.createElement("li");
+li3.innerHTML = "I am DOM created li2";
+const li4 = document.createElement("li");
+li4.innerHTML = "I am DOM created li3";
 
-for (const section of sections) {
-  section.style.color = "red";
-  section.style.backgroundColor = "lightgrey";
-  section.style.margin = "10px";
-  section.style.borderRadius = "10px";
-  section.style.border = "2px solid grey";
-  section.style.padding = "15px";
-}
-
-const allLi = document.querySelectorAll("li");
-
-for (const li of allLi) {
-  li.classList.add("css-class");
-}
+const body = document.getElementById("body");
+body.appendChild(section2);
+section2.appendChild(h12);
+section2.appendChild(ul);
+ul.appendChild(li2);
+ul.appendChild(li3);
+ul.appendChild(li4);
