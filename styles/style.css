@@ -1,0 +1,16 @@
+.css-class {
+  background-color: rgba(40, 181, 194, 0.29);
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+  padding: 15px;
+  margin: 8px;
+  border-radius: 15px;
+  font-size: 20px;
+  height: 40px;
+}
+
+.css-class:hover {
+  transform: scale(1.04);
+  transition: transform 0.4s ease-in-out;
+}

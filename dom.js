@@ -18,3 +18,9 @@ for (const section of sections) {
   section.style.border = "2px solid grey";
   section.style.padding = "15px";
 }
+
+const allLi = document.querySelectorAll("li");
+
+for (const li of allLi) {
+  li.classList.add("css-class");
+}
